@@ -1,0 +1,68 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+a,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #ff7b54;
+  --color-text-primary: #fff;
+
+  --font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 34px;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.header__link {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav {
+  display: inline-block;
+  justify-self: end;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin-inline-end: 36px;
+  font-size: 20px;
+}
